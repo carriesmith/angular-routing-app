@@ -1,0 +1,22 @@
+{
+  "name": "angular-routing-app",
+  "version": "1.0.0",
+  "description": "MEAN Machine sample app, introduction to Angular ngRoute.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/carriesmith/angular-routing-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/carriesmith/angular-routing-app/issues"
+  },
+  "homepage": "https://github.com/carriesmith/angular-routing-app#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Routing w/ Angular</title>
+
+  <!-- set up base path for angular routing -->
+  <base href="/">
+
+  <!-- CSS -->
+  <!-- load boostrap and fontawesome via CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <style>
+    body {padding-top: 50px;}
+  </style>
+
+  <!-- JS -->
+  <!-- load angular and angular route via CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular-route.js"></script>
+  
+  <!-- load angular app files -->
+  <script src="js/app.js"></script>
+  <script src="js/app.routes.js"></script>
+
+</head>
+<body>
+  
+  <body class="container" ng-app="routerApp" ng-controller="mainController as main" >
+    
+    <!-- HEADER AND NAVBAR -->
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="navbar-header">
+          <a href="/" class="navbar-brand">Angular Routing Example</a>
+        </div>
+        <ul class="nav navbar-nav navbar-right">
+
+          <li> <a href="/"><i class="fa fa-home"></i> Home </a> </li>
+          <li> <a href="/about"><i class="fa fa-shield"></i> About </a> </li>
+          <li> <a href="/contact"><i class="fa fa-comment"></i> Contact </a></li>
+
+        </ul>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <main>
+      
+      <!-- Angular templating -->
+      <!-- this is where content is injected -->
+
+      <div ng-view></div>
+
+    </main>
+
+  </body>
+
+</body>
+</html>
